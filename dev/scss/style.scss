@@ -1,0 +1,19 @@
+@import "_mixins";
+@import '_grid';
+@import '_reset';
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+.clearfix {
+  @include clearfix;
+}
+*{
+	  box-sizing: border-box;
+}
+body{
+	width: 100%;
+}
