@@ -554,13 +554,6 @@ body{
 
 
 
-.BLOK{
-	height: 100vh;
-	border: 2px solid red;
-	background: #ccc;
-	z-index: 1;
-}
-
 
 
 
@@ -611,6 +604,9 @@ body{
 	}
 }
 @include breakpoint(phablet){
+	.team-item__img{
+		text-align: center;
+	}
 	.wrapper{
 		margin-bottom: 0;
 	}

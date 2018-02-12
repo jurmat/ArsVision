@@ -565,12 +565,6 @@ body {
     font-family: 'montserrat-light';
     margin-bottom: 10px; }
 
-.BLOK {
-  height: 100vh;
-  border: 2px solid red;
-  background: #ccc;
-  z-index: 1; }
-
 @media (max-width: 37.5em) {
   .wrapper {
     margin-bottom: 0; }
@@ -605,6 +599,8 @@ body {
         max-width: inherit; } }
 
 @media (min-width: 37.5em) {
+  .team-item__img {
+    text-align: center; }
   .wrapper {
     margin-bottom: 0; }
   .news-container .news-title {
