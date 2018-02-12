@@ -1,20 +1,204 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>game</title>
+    <title>ArsVision</title>
     <meta charset="utf-8">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="jquery.maskedinput.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnTAxhj8yuG0bpdOVXUdmgNe8bGE4rHc4&amp;language=ru&amp;region=ru&amp;callback=initMap" async defer></script>
-    <script type="text/javascript" src="js/jquery.googlemap.js"></script>
     <script src="js/src.js"></script>
+    <script src="js/lightslider.js"></script>
+    <script src="js/wow.js"></script>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/style.css">
-    <link href="fonts/stylesheet.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i&amp;amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/lightslider.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <div class="reviews-container clearfix">
+        <div class="reviews-slider col-l-2x wow fadeInLeft" data-wow-offset="120">
+          <div class="slider">
+            <div class="slider-item">
+              <div class="slider-item__foto"><img src="img/slider-foto.jpg" alt=""></div>
+              <div class="slider-item__text">
+                <p>Aliquam ante sem, pharetra a egestas sed, aliquam non diam. Fusce elementum magna ut lacus cursus, eget dapibus mi condimentum. Praesent pulvinar, ligula sit amet placerat fringilla, diam leo lobortis tortor, maximus vehicula ex leo at mauris.</p>
+              </div>
+              <div class="slider-item__title">
+                <p>Marek Kowalski</p><span>Stanowisko</span>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="slider-item__foto"><img src="img/slider-foto.jpg" alt=""></div>
+              <div class="slider-item__text">
+                <p>Aliquam ante sem, pharetra a egestas sed, aliquam non diam. Fusce elementum magna ut lacus cursus, eget dapibus mi condimentum. Praesent pulvinar, ligula sit amet placerat fringilla, diam leo lobortis tortor, maximus vehicula ex leo at mauris.</p>
+              </div>
+              <div class="slider-item__title">
+                <p>Marek Kowalski</p><span>Stanowisko</span>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="slider-item__foto"><img src="img/slider-foto.jpg" alt=""></div>
+              <div class="slider-item__text">
+                <p>Aliquam ante sem, pharetra a egestas sed, aliquam non diam. Fusce elementum magna ut lacus cursus, eget dapibus mi condimentum. Praesent pulvinar, ligula sit amet placerat fringilla, diam leo lobortis tortor, maximus vehicula ex leo at mauris.</p>
+              </div>
+              <div class="slider-item__title">
+                <p>Marek Kowalski</p><span>Stanowisko</span>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="slider-item__foto"><img src="img/slider-foto.jpg" alt=""></div>
+              <div class="slider-item__text">
+                <p>Aliquam ante sem, pharetra a egestas sed, aliquam non diam. Fusce elementum magna ut lacus cursus, eget dapibus mi condimentum. Praesent pulvinar, ligula sit amet placerat fringilla, diam leo lobortis tortor, maximus vehicula ex leo at mauris.</p>
+              </div>
+              <div class="slider-item__title">
+                <p>Marek Kowalski</p><span>Stanowisko</span>
+              </div>
+            </div>
+          </div>
+          <div class="RevSlidePrev"></div>
+          <div class="RevSlideNext"></div>
+        </div>
+        <div class="reviews-text col-l-2x wow fadeInRight" data-wow-offset="120">
+          <div class="reviews-text__title"><span>Lorem Ipsum</span></div>
+          <div class="reviews-text__text">
+            <p>Ponad 9-letnie doświadczenie na rynku nieruchomości zaowocowało współpracą z największymi Bankami działającymi na terenie Polski, jak również z wieloma deweloperami, przedsiębiorstwami oraz klientami indywidualnymi.</p>
+          </div>
+        </div>
+      </div>
+      <!--	-->
+      <!--	.numb-->
+      <!--			span.curent 1-->
+      <!--			span.slash /-->
+      <!--			span.total-->
+      <div class="banks-container clearfix">
+        <div class="row wow fadeInDown" data-wow-offset="120">
+          <div class="bank-logo col-l-1-6">
+            <div class="bank-logo__img"><img src="img/credit_agricole_logo.png" alt=""></div>
+          </div>
+          <div class="bank-logo col-l-1-6">
+            <div class="bank-logo__img"><img src="img/Raiffeisen Bank logo.jpg" alt=""></div>
+          </div>
+          <div class="bank-logo col-l-1-6">
+            <div class="bank-logo__img"><img src="img/credit_agricole_logo.png" alt=""></div>
+          </div>
+          <div class="bank-logo col-l-1-6">
+            <div class="bank-logo__img"><img src="img/Raiffeisen Bank logo.jpg" alt=""></div>
+          </div>
+          <div class="bank-logo col-l-1-6">
+            <div class="bank-logo__img"><img src="img/credit_agricole_logo.png" alt=""></div>
+          </div>
+          <div class="bank-logo col-l-1-6">
+            <div class="bank-logo__img"><img src="img/Raiffeisen Bank logo.jpg" alt=""></div>
+          </div>
+        </div>
+        <div class="row wow fadeInDown" data-wow-offset="120">
+          <div class="bank-logo col-l-1-6">
+            <div class="bank-logo__img"><img src="img/credit_agricole_logo.png" alt=""></div>
+          </div>
+          <div class="bank-logo col-l-1-6">
+            <div class="bank-logo__img"><img src="img/Raiffeisen Bank logo.jpg" alt=""></div>
+          </div>
+          <div class="bank-logo col-l-1-6">
+            <div class="bank-logo__img"><img src="img/credit_agricole_logo.png" alt=""></div>
+          </div>
+          <div class="bank-logo col-l-1-6">
+            <div class="bank-logo__img"><img src="img/Raiffeisen Bank logo.jpg" alt=""></div>
+          </div>
+          <div class="bank-logo col-l-1-6">
+            <div class="bank-logo__img"><img src="img/credit_agricole_logo.png" alt=""></div>
+          </div>
+          <div class="bank-logo col-l-1-6">
+            <div class="bank-logo__img"><img src="img/Raiffeisen Bank logo.jpg" alt=""></div>
+          </div>
+        </div>
+      </div>
+      <div class="news-container clearfix">
+        <div class="news-title wow fadeInDown" data-wow-offset="120"><span>Aktualności</span></div>
+        <div class="news-items wow fadeInDown clearfix" data-wow-offset="120">
+          <div class="news-item col-l-3x">
+            <div class="news-item__date"><span>20.11.2016</span></div>
+            <div class="news-item__title"><span>Lorem ipsum dolor sit amet</span></div>
+            <div class="news-item__text">
+              <p>Donec suscipit condimentum eros nec lobortis. Aenean quam diam, condimentum ac iaculis a, volutpat eu metus. Aliquam ante sem, pharetra a egestas sed, aliquam non diam. </p>
+            </div>
+            <div class="news-item__more"><a href="#">Dowiedz się więcej</a></div>
+          </div>
+          <div class="news-item col-l-3x">
+            <div class="news-item__date"><span>20.11.2016</span></div>
+            <div class="news-item__title"><span>Lorem ipsum dolor sit amet</span></div>
+            <div class="news-item__text">
+              <p>Donec suscipit condimentum eros nec lobortis. Aenean quam diam, condimentum ac iaculis a, volutpat eu metus. Aliquam ante sem, pharetra a egestas sed, aliquam non diam. </p>
+            </div>
+            <div class="news-item__more"><a href="#">Dowiedz się więcej</a></div>
+          </div>
+          <div class="news-item col-l-3x">
+            <div class="news-item__date"><span>20.11.2016</span></div>
+            <div class="news-item__title"><span>Lorem ipsum dolor sit amet</span></div>
+            <div class="news-item__text">
+              <p>Donec suscipit condimentum eros nec lobortis. Aenean quam diam, condimentum ac iaculis a, volutpat eu metus. Aliquam ante sem, pharetra a egestas sed, aliquam non diam. </p>
+            </div>
+            <div class="news-item__more"><a href="#">Dowiedz się więcej</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="map-container clearfix">
+        <div class="info-wrap col-l-2x col-t-2x wow fadeInLeft" data-wow-offset="120">
+          <div class="info">
+            <div class="info__title wow fadeInDown" data-wow-offset="120">
+              <p>Integro Group Spółka z o. o. Sp. k.</p>
+            </div>
+            <div class="wow fadeInUp" data-wow-offset="120">
+              <div class="info__adress">
+                <p>60 – 529 Poznań, ul. Dąbrowskiego 79A, Vp.</p>
+              </div>
+              <div class="info__email"><a href="#">biuro@integro-wyceny.pl</a></div>
+              <div class="info__phone">
+                <p>telefon (+48) 61 861 56 93</p>
+              </div>
+              <div class="info__fax">
+                <p>fax (+48) 61 861 60 53</p>
+              </div>
+              <div class="info__add-location">
+                <p>NIP 7792310026 / REGON 300578586</p>
+                <p>Dodać mapkę z lokalizacją biura</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="map col-l-2x col-t-2x"></div>
+      </div>
+      <div class="back-top"> <a href="#">POWRÓT DO GÓRY</a></div>
+    </div>
+    <div class="footer-wrap clearfix">
+      <div class="footer clearfix">
+        <div class="footer__logo col-l-4x col-t-4x"><a href="#"><img src="img/logo_footer.png" alt="logo"></a></div>
+        <div class="footer__firma col-l-4x col-t-4x">
+          <p>FIRMA</p>
+          <ul>
+            <li><a href="#">O firmie  </a></li>
+            <li><a href="#">Oferta </a></li>
+            <li><a href="#">Wycena nieruchomości </a></li>
+            <li><a href="#">Aktualności </a></li>
+            <li><a href="#">Linki  </a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer__kontakt col-l-4x col-t-4x">
+          <p>KONTAKT</p>
+          <div class="email"><a href="#">biuro@integro-wyceny.pl</a></div>
+          <div class="phone"><span>Tel. 61  861  56  93</span></div>
+          <div class="fax"><span>Fax 61  861  60  53</span></div>
+          <div class="socials clearfix"><a href="#">
+              <div class="soc-icon"><i class="fa fa-facebook"></i></div></a><a href="#">
+              <div class="soc-icon"><i class="fa fa-twitter"></i></div></a><a href="#">
+              <div class="soc-icon"><i class="fa fa-linkedin"></i></div></a><a href="#">
+              <div class="soc-icon"><i class="fa fa-instagram"></i></div></a></div>
+        </div>
+        <div class="footer__about col-l-4x col-t-4x"><span>O NAS</span>
+          <p>Przedsiębiorstwo INTEGRO GROUP świadczy usługi na rzecz Klientów korporacyjnych i indywidualnych na terenie całej Polski, w zakresie wyceny nieruchomości i kontroli inwestycji. </p>
+        </div>
+      </div>
+      <div class="copyright"><span>Integro Group 2016</span><span>Wykonanie: Ars.Vision</span></div>
+    </div>
+  </body>
 </html>

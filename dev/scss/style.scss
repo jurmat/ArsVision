@@ -14,6 +14,696 @@
 *{
 	  box-sizing: border-box;
 }
+
+@font-face {
+	font-family: 'montserrat-light';
+	src: url('../fonts/montserrat-light.ttf');
+}
+@font-face {
+	font-family: 'Montserrat-Medium';
+	src: url('../fonts/Montserrat-Medium.ttf');
+}
+@font-face {
+	font-family: 'ProximaNova-Bold';
+	src: url('../fonts/ProximaNova-Bold.ttf');
+}
+@font-face {
+	font-family: 'ProximaNova-Light';
+	src: url('../fonts/ProximaNova-Light.ttf');
+}
+@font-face {
+	font-family: 'proximanova-lightitalic';
+	src: url('../fonts/proximanova-lightitalic.otf');
+}
+@font-face {
+	font-family: 'ProximaNova-Regular';
+	src: url('../fonts/ProximaNova-Regular.ttf');
+}
 body{
 	width: 100%;
 }
+.wrapper{
+	position:relative;
+	max-width:1920px;
+	margin:0 auto;
+	z-index:2;
+	padding: 0 15px;
+	margin-bottom: 395px;
+	background: #fff;
+}
+
+.reviews-container{
+	.reviews-slider{
+		padding: 0 65px;
+		position: relative;
+		&:hover{
+			.RevSlideNext ,.RevSlidePrev{
+				opacity: 1;
+			}
+		}
+		.slider-item{
+			text-align: center;
+			
+			&__foto{
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				overflow: hidden;
+				display: inline-block;
+				margin-top: 165px;
+				margin-bottom: 34px;
+			}
+			&__text{
+				max-width: 570px;
+				margin: 0 auto;
+				font-family: 'ProximaNova-Light';
+				font-size: 20px;
+				color: #535353;
+				margin-bottom:68px;
+				line-height: 1.6;
+				
+				p{
+					text-align: center;
+					position: relative;
+					&:after{
+						content: "\201C";
+						display: inline;
+						position: absolute;
+						font-size: 79px;
+						bottom: -130px;
+						left: 50%;
+						margin-left: -14px;
+					}
+				}
+				
+			}
+			&__title{
+				p{
+					font-family: 'ProximaNova-Bold';
+					font-size: 26px;
+					margin-bottom: 5px;
+				}
+				span{
+					font-family: 'proximanova-lightitalic';
+					font-size: 18px;
+					display: block;
+					margin-bottom: 25px;
+				}
+			}
+		}
+	}
+	.RevSlidePrev{
+		cursor: pointer;
+		position: absolute;
+		top: 60%;
+		left: 30px;
+		height: 50px;
+		width: 30px;
+		opacity: 0;
+		transition: 0.5s;
+		&:after{
+			content: '';
+			display: block;
+			width: 2px;
+			height: 23px;
+			background-color: #717075;
+			transform: rotate(-35deg);
+			position: relative;
+			top: -5px;
+			left: 10px;
+			border-radius: 2px;
+			transition: 0.2s;
+		}
+		&:before{
+			content: '';
+			display: block;
+			width: 2px;
+			height: 23px;
+			background-color: #717075;
+			transform: rotate(35deg);
+			left: 10px;
+			position: relative;
+			border-radius: 2px;
+			transition: 0.2s;
+		}
+
+
+	}
+
+	.RevSlideNext{
+		position: absolute;
+		height: 50px;
+		width: 30px;
+		top: 60%;
+		right: 30px;
+		cursor: pointer;
+		opacity: 0;
+		transition: 0.5s;
+		&:before{
+			content: '';
+			display: block;
+			width: 2px;
+			height: 23px;
+			background-color: #717075;
+			transform: rotate(-35deg);
+			position: relative;
+			left: 10px;
+			border-radius: 2px;
+			transition: 0.2s;
+		}
+		&:after{
+			content: '';
+			display: block;
+			width: 2px;
+			height: 23px;
+			background-color: #717075;
+			transform: rotate(35deg);
+			position: relative;
+			top: -5px;
+			left: 10px;
+			border-radius: 2px;
+			transition: 0.2s;
+		}
+
+	}
+	.lSSlideOuter .lSPager.lSpg > li a{
+		background-color: #717075;
+		border-radius: 0px;
+		width: 5px;
+		height: 5px;
+		    transition: all 0s linear 0s;
+	}
+	.lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a{
+		background: #fff;
+		border:2px solid #000;
+		width: 11px;
+		height: 11px;
+		top: 3px;
+	}
+	.reviews-text{
+		background-image: url(../img/reviews-bg.png);
+		background-size: cover;
+		background-position: center;
+		height: 753px;
+		padding: 0 15px;
+		padding-top: 262px;
+		&__title{
+			position: relative;
+			text-align: center;
+			font-size: 46px;
+			color: #fff;
+			font-family: 'ProximaNova-Regular';
+			margin-bottom: 55px;
+			&:after{
+				content: '';
+				display: block;
+				height: 1px;
+				width: 40px;
+				background: #919191;
+				position: absolute;
+				bottom: -25px;
+				left: 50%;
+				margin-left: -20px;
+			}
+		}
+		&__text{
+			text-align: center;
+			max-width: 575px;
+			margin: 0 auto;
+			font-family: 'ProximaNova-Light';
+			font-size: 20px;
+			line-height: 1.6;
+			color: #fff;
+		}
+	}
+	
+}
+
+
+///////////////////////   BANK   /////////////////////////////
+.banks-container{
+	padding: 0 15px;
+	.bank-logo{
+		border: 1px solid #eee;
+		height: 175px;
+		filter: saturate(0);
+		-webkit-filter: saturate(0);
+		padding-top: 55px;
+		transition: 0.4s;
+		opacity: 0.5;
+		&:hover{
+			filter: saturate(1);
+			-webkit-filter: saturate(1);
+			opacity: 1;
+		}
+		&__img{
+			max-width: 160px;
+			margin: 0 auto;
+		}
+	}
+	
+}
+
+///////////////////////   AFN BANK   /////////////////////////////
+
+///////////////////////   NEWS   /////////////////////////////
+
+.news-container{
+	.news-title{
+		background: #f2f2f2;
+		padding: 35px 60px 25px 360px ;
+		font-family: 'ProximaNova-Regular';
+		font-size: 32px;
+	}
+	
+	.news-item{
+		padding: 66px 80px 47px 84px;
+		border-bottom: 1px solid #eeeeee;
+		&__date{
+			font-family: 'proximanova-lightitalic';
+			font-size: 19px;
+			color: #b6b6b6;
+			margin-bottom: 20px;
+		}
+		&__title{
+			font-family: 'ProximaNova-Bold';
+			font-size: 24px;
+			color: #535353;
+			margin-bottom: 10px;
+		}
+		&__text{
+			font-family: 'ProximaNova-Light';
+			font-size: 19px;
+			color: #535353;
+			margin-bottom: 18px;
+			line-height: 1.4;
+		}
+		&__more{
+			a{
+				font-family: 'ProximaNova-Regular';
+				color: #446cae;
+				text-decoration: none;
+				font-size: 16px;
+				text-transform: uppercase;
+			}
+		}
+		&:first-child{
+			border-left: none;
+		}
+	}
+
+}
+
+///////////////////////  AND NEWS   /////////////////////////////
+
+
+///////////////////////   MAP   /////////////////////////////
+
+.map-container{
+	border-top: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+	.info-wrap{
+		padding-top: 101px;
+		padding-bottom: 101px;
+		.info{
+			max-width: 440px;
+			margin: 0 auto;
+			font-family: 'ProximaNova-Light';
+			font-size: 19px;
+			&__title{
+				font-family: 'ProximaNova-Bold';
+				font-size: 24px;
+				margin-bottom: 20px;
+			}
+			&__email{
+				margin-bottom: 16px;
+				a{
+					color: #446cae;
+					text-decoration: none;
+				}
+			}
+			&__fax{
+				margin-bottom: 15px;
+			}
+		}
+	}
+	.map{
+		background-image: url(../img/map.png);
+		height: 420px;
+		background-position: center;
+	}
+	
+}
+.back-top{
+	text-align: center;
+	padding: 20px;
+	a{
+		text-decoration: none;
+		font-size: 17px;
+		color: #626262;
+		font-family: 'ProximaNova-Bold';
+	}
+}
+
+///////////////////////  AND MAP   /////////////////////////////
+
+
+///////////////////////   FOOTER   /////////////////////////////
+.footer-wrap{
+	padding: 0 15px 15px 15px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: 0;
+	
+	.footer{
+		background-color: #333334;
+		width: 100%;
+		z-index: 1;
+		padding: 55px 0 24px 0;
+		border-bottom: 1px solid #484849;
+		&__logo{
+			text-align: center;
+			padding-top: 83px;
+    		margin-left: -11px;
+		}
+		&__firma{
+			    padding-left: 84px;
+			p{
+				color: #fff;
+				margin-bottom: 20px;
+				font-family: 'Montserrat-Medium';
+				font-size: 20px;
+			}
+			ul{
+				list-style: none;
+				li{
+					margin-bottom: 8px;
+				}
+				a{
+					text-decoration: none;
+					color: #b7b7b7;
+					font-family: 'montserrat-light';
+					font-size: 17px;
+				}
+			}
+		}
+		&__kontakt{
+			color: #fff;
+			margin-left: 78px;
+			padding-bottom: 10px;
+			
+			p{
+				margin-bottom: 20px;
+				font-family: 'Montserrat-Medium';
+				font-size: 20px;
+			}
+			.email{
+				margin-bottom: 7px;
+				a{
+					text-decoration: none;
+					color: #fff;
+					font-family: 'montserrat-light';
+					font-size: 15px;
+				}
+			}
+			.phone{
+				margin-bottom: 7px;
+				color: #b7b7b7;
+				font-family: 'montserrat-light';
+				font-size: 15px;
+			}
+			.fax{
+				margin-bottom: 26px;
+				color: #b7b7b7;
+				font-family: 'montserrat-light';
+				font-size: 15px;
+			}
+			.socials{
+				margin-left: -3px;
+				a{
+					text-decoration: none;
+				}
+				.soc-icon{
+					width: 42px;
+					height: 42px;
+					border-radius: 50%;
+					background: #535353;
+					text-align: center;
+					line-height:47px;
+					display: inline-block;
+					
+					.fa{
+						color: #fff;
+						font-size: 21px;
+					}
+				}
+			}
+		}
+		&__about{
+			padding-left: 40px;
+			margin-left: -78px;
+			span{
+				color: #fff;
+				margin-bottom: 17px;
+				display: block;
+				font-family: 'Montserrat-Medium';
+				font-size: 20px;
+			}
+			p{
+				color: #b7b7b7;
+				font-family: 'montserrat-light';
+				font-size: 15px;
+				max-width: 285px;
+				line-height: 1.6;
+			}
+		}
+		
+	}
+}
+.copyright{
+	background-color: #333334;
+	padding: 21px 42px 14px 42px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	text-align: center;
+	span{
+		color: #919191;
+		font-size: 14px;
+		font-family: 'montserrat-light';
+		margin-bottom: 10px;
+	}
+}
+///////////////////////   AND FOOTER   /////////////////////////////
+
+
+
+
+
+
+
+
+.BLOK{
+	height: 100vh;
+	border: 2px solid red;
+	background: #ccc;
+	z-index: 1;
+}
+
+
+
+
+@include breakpoint(mobileonly){
+	.news-container{
+		.news-title{
+			padding: 35px 60px 25px 35px;
+			text-align: center;
+		}
+		.news-item{
+			padding: 66px 25px 47px 25px;
+		}
+	}
+	.footer-wrap{
+		position: static;
+		.footer{
+			&__logo{
+				margin: 0;
+				padding-top: 0px;
+				margin-bottom: 20px;
+				border-bottom: 1px solid #484849;
+			}
+			&__firma{
+				text-align: center;
+				padding-left: 0;
+				margin-bottom: 20px;
+				border-bottom: 1px solid #484849;
+			}
+			&__kontakt{
+				margin-left: 0;
+				text-align: center;
+				margin-bottom: 20px;
+				border-bottom: 1px solid #484849;
+			}
+			&__about{
+				margin-left: 0;
+				padding-left: 0;
+				text-align: center;
+				padding: 0 15px;
+				p{
+					max-width: inherit;
+				}
+			}
+		}
+	}
+}
+@include breakpoint(phablet){
+	.news-container{
+		.news-title{
+			padding: 35px 60px 25px 35px;
+			text-align: center;
+		}
+		.news-item{
+			border-left: none;
+		}
+	}
+	.footer-wrap{
+		position: static;
+		.footer{
+			&__logo{
+				padding-top: 0px;
+				margin-bottom: 20px;
+				border-bottom: 1px solid #484849;
+				margin-left: 0;
+			}
+			&__firma{
+				text-align: center;
+				padding-left: 0;
+				margin-bottom: 20px;
+				border-bottom: 1px solid #484849;
+			}
+			&__kontakt{
+				margin-left: 0;
+				text-align: center;
+				margin-bottom: 20px;
+				border-bottom: 1px solid #484849;
+				
+			}
+			&__about{
+				margin-left: 0;
+				padding-left: 0;
+				text-align: center;
+				padding: 0 15px;
+				p{
+					max-width: inherit;
+				}
+			}
+		}
+	}
+}
+@include breakpoint(tablet){
+	
+	.footer-wrap{
+		position: fixed;
+		z-index: 0;
+		.footer{
+			&__logo{
+				padding-top: 83px;
+    			margin-left: -11px;
+				border:none;
+			}
+			&__firma{
+				text-align: left;
+				padding:0  20px;
+				
+				margin-bottom: 20px;
+				border:none;
+			}
+			&__kontakt{
+				margin-left: 0px;
+				text-align: left;
+				margin-bottom: 20px;
+				border:none;
+				.socials{
+					a{
+						margin-right: 6px;
+					}
+				}
+				
+			}
+			&__about{
+				text-align: left;
+				padding-left: 0px;
+				margin-left: 0px;
+				p{
+					max-width: i;
+				}
+			}
+		}
+	}
+}
+@include breakpoint(laptop){
+	.news-container{
+		.news-title{
+			padding: 35px 60px 25px 360px;
+			text-align: left;
+		}
+		.news-item{
+			border-left: 1px solid #eeeeee;
+			border-bottom: 1px solid #eeeeee;
+		}
+	}
+	.footer-wrap{
+//		position: fixed;
+		.footer{
+			&__logo{
+				padding-top: 83px;
+    			margin-left: -11px;
+				border:none;
+			}
+			&__firma{
+				text-align: left;
+				padding-left: 84px;
+				margin-bottom: 20px;
+				border:none;
+			}
+			&__kontakt{
+				margin-left: 78px;
+				text-align: left;
+				margin-bottom: 20px;
+				border:none;
+				.socials{
+					a{
+						margin-right: 8px;
+					}
+				}
+			}
+			&__about{
+				text-align: left;
+				padding-left: 40px;
+				margin-left: -78px;
+				p{
+					max-width: 285px;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
