@@ -4,13 +4,7 @@
 		padding: 0 15px;
 	}
 }
-.wrapper{
-  position:relative;
-  max-width:960px;
-  margin:0 auto;
-  z-index:2;
-  padding: 0 15px;
-}
+
 .col-m-3x{
 	  @include breakpoint(mobileonly){
   float:left;
@@ -41,10 +35,28 @@
   width:33.3%;
   }
 }
+.col-t-2x{
+  @include breakpoint(tablet){
+  float:left;
+  width:50%;
+  }
+}
 .col-t-3x{
   @include breakpoint(tablet){
   float:left;
   width:33.3%;
+  }
+}
+.col-t-4x{
+  @include breakpoint(tablet){
+  float:left;
+  width:25%;
+  }
+}
+.col-l-1-6{
+  @include breakpoint(laptop){
+  float:left;
+  width:16.6666%;
   }
 }
 .col-l-4x{
