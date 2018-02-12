@@ -1,4 +1,5 @@
 
+
 function initMap(){
 	var element = document.getElementById('map');
 	var options = {
@@ -22,10 +23,10 @@ function initMap(){
 }
 
 
-$(document).ready(function(){
 	
 
 	
+$(document).ready(function(){
 	new WOW().init();
 	
 	var reviewsSlider = $('.slider').lightSlider({
