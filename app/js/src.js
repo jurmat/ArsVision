@@ -1,4 +1,30 @@
+
+function initMap(){
+	var element = document.getElementById('map');
+	var options = {
+		zoom: 17,
+		center:{
+			lat:52.412165,
+			lng:16.910935
+		}
+	};
+	
+	var myMap = new google.maps.Map(element, options);
+
+	var marker = new google.maps.Marker({
+		position:{
+			lat:52.412165,
+			lng:16.910935
+		},
+		map: myMap,
+		icon:"img/map-marker.png"
+	})
+}
+
+
 $(document).ready(function(){
+	
+
 	
 	new WOW().init();
 	

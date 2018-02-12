@@ -16,8 +16,11 @@
 					p NIP 7792310026 / REGON 300578586
 					p Dodać mapkę z lokalizacją biura
 		
-	.map.col-l-2x.col-t-2x
-.back-top 
+	.map.col-l-2x.col-t-2x.wow.fadeIn(data-wow-offset=120)
+		script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRmdJzcAcRew474Bz-741V9Y7Hv4Mvvdk&callback=initMap")
+		#map
+    	
+.back-top.wow.fadeInUp(data-wow-offset=120)
 	a(href="#") POWRÓT DO GÓRY
 	
 	

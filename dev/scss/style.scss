@@ -52,6 +52,45 @@ body{
 	background: #fff;
 }
 
+///////////////////////   OUR-TEAM   /////////////////////////////
+.Our-team{
+	max-width: 1210px;
+	margin: 0 auto;
+	margin-bottom: 125px;
+	&__title{
+		font-family: 'ProximaNova-Regular';
+		font-size: 32px;
+		color: #535353;
+		padding: 35px 0;
+	}
+	.team-item{
+		&__title{
+			font-family: 'ProximaNova-Bold';
+			font-size: 24px;
+			color: #535353;
+			text-transform: uppercase;
+			padding: 8px 0;
+		}
+		&__text{
+			font-family: 'ProximaNova-Light';
+			font-size: 18px;
+			line-height: 1.4;
+			padding-bottom: 10px;
+		}
+		&__more{
+			a{
+				text-decoration: none;
+				font-family: 'ProximaNova-Regular';
+				font-size: 16px;
+				text-transform: uppercase;
+				color: #446cae;
+			}
+		}
+	}
+}
+///////////////////////   AND OUR-TEAM   /////////////////////////////
+
+///////////////////////   REVIEWS   /////////////////////////////
 .reviews-container{
 	.reviews-slider{
 		padding: 0 65px;
@@ -201,6 +240,7 @@ body{
 		top: 3px;
 	}
 	.reviews-text{
+		margin-top: 15px;
 		background-image: url(../img/reviews-bg.png);
 		background-size: cover;
 		background-position: center;
@@ -238,7 +278,7 @@ body{
 	}
 	
 }
-
+///////////////////////  AND REVIEWS   /////////////////////////////
 
 ///////////////////////   BANK   /////////////////////////////
 .banks-container{
@@ -348,11 +388,12 @@ body{
 		}
 	}
 	.map{
-		background-image: url(../img/map.png);
 		height: 420px;
 		background-position: center;
 	}
-	
+	#map{
+		height: 420px;
+	}
 }
 .back-top{
 	text-align: center;
@@ -519,6 +560,9 @@ body{
 
 
 @include breakpoint(mobileonly){
+	.wrapper{
+		margin-bottom: 0;
+	}
 	.news-container{
 		.news-title{
 			padding: 35px 60px 25px 35px;
@@ -562,6 +606,9 @@ body{
 	}
 }
 @include breakpoint(phablet){
+	.wrapper{
+		margin-bottom: 0;
+	}
 	.news-container{
 		.news-title{
 			padding: 35px 60px 25px 35px;
@@ -606,7 +653,9 @@ body{
 	}
 }
 @include breakpoint(tablet){
-	
+	.wrapper{
+		margin-bottom: 395px;
+	}
 	.footer-wrap{
 		position: fixed;
 		z-index: 0;
